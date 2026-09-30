@@ -1,34 +1,50 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ Hoài Sang - Personal Website</title>
-    <!-- Import phông chữ từ Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Liên kết tệp CSS bên ngoài vào đây -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="card">
-        <div class="avatar">S</div>
-        <h1>Hồ Hoài Sang</h1>
-        <p class="subtitle">Student & Developer</p>
-        <p class="bio">Chào mừng bạn đến với trang web cá nhân của tôi!</p>
-
-        <div class="links">
-            <a href="https://github.com/sangpro22" target="_blank" class="btn">GitHub Profile</a>
-            <a href="mailto:example@gmail.com" class="btn">Gửi Email Liên Hệ</a>
-        </div>
-
-        <footer>
-            © 2026 Hồ Hoài Sang. Hosted on GitHub Pages.
-        </footer>
+<div class="login-container">
+    <!-- Header / Logo Area -->
+    <div class="brand-header">
+        <h1 class="logo">Examly</h1>
+        <p class="tagline">Nền tảng đánh giá giáo dục chuyên nghiệp</p>
     </div>
 
-</body>
-</html>
+    <!-- Login Form Card -->
+    <div class="login-card">
+        <h2 class="card-title">Đăng nhập</h2>
+
+        <form class="login-form" action="#">
+            <!-- Input Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" placeholder="nhap@email.com" required>
+                </div>
+            </div>
+
+            <!-- Input Password -->
+            <div class="form-group">
+                <div class="label-row">
+                    <label for="password">Mật khẩu</label>
+                    <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                    <i class="fa-regular fa-eye toggle-password"></i>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">Đăng nhập</button>
+        </form>
+
+        <!-- Divider -->
+        <div class="divider">
+            <span>Hoặc</span>
+        </div>
+
+        <!-- Register Link -->
+        <div class="register-footer">
+            <span>Chưa có tài khoản? </span>
+            <a href="#" class="register-link">Đăng ký tài khoản mới</a>
+        </div>
+    </div>
+</div>
